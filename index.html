@@ -1,244 +1,341 @@
 <!DOCTYPE html>
-<html>
-<head>
-<script type="text/javascript" src="scriptt.js"></script> 
-<link rel="stylesheet" href="style.css">
-<meta charset="utf-8">
-<title>Strona - Patryk Czarnocki</title>
-
-<style>
-.inline {
-	display: inline-block;
-	top: 0;
-	vertical-align: top;
-}
-
-#choose, #players {
-	width: 200px;
-	height: 147px;
-	text-align: center;
-	padding: 15px 0;
-	margin: 7px 0;
-	background-color: lightblue;
-	border: none;
-
-}
-
-#resert_div {
-	width: 200px;
-	height: 147px;
-	text-align: center;
-	padding: 50px 0;
-	margin: 7px 0;
-	background-color: lightblue;
-	border: none;
-}
-
-#one_player, #two_players, #reset {
-	padding: 15px;
-}
-
-
-#play_with, #you_choose {
-	margin: 20px;
-	font-size: 20px;
-}
-
-table{
-	max-width: 450px;
-	max-height: 450px;
-	margin: 5px auto;
-	display: grid;
-	border: 1px solid #ddd;
-	cursor: pointer;
-}
-
-td
-{
-background-color: #4CAF50;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-	width: 150px;
-	height: 150px;
-	font-size: 50px; color: white;	
-}
-
-td:hover
-{
-	background: #74b376;
-}
-
-#helper
-{
-	display: none;
-}
-
-#statement
-{
-	max-width: 450px;
-	height: 150px;
-	margin: 50px auto;
-	text-align: center;
-	font-size: 30px;
-	background-color: lightblue;
-	border: none;
-
-}
-
-@media screen and (max-width: 400px) {
-	.inline {
-		display: block;
-	}
+<html lang="pl-PL">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="Grafika komputerowa - projekty graficzne">
+        <meta name="author" content="Patryk Czarnocki">
+        <title>Patryk Czarnocki - grafik komputerowy</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" crossorigin="anonymous"></script>
+        <link href="css/styles.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/heading.css">
+        <link rel="stylesheet" href="css/body.css">
+		<link rel="icon" href="img/favicon.png" type="image/x-icon">
+    </head>
 	
-	#choose, #players, #resert_div {
-		width: 100%;
-	}
-}
-
-.button {
-  background-color: #4CAF50;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-}
-
-
-
-* {
-  box-sizing: border-box;
-}
-.menu {
-  float: left;
-  width: 20%;
-}
-.menuitem {
-  padding: 8px;
-  margin-top: 7px;
-  border-bottom: 1px solid #f1f1f1;
-}
-.main {
-  float: left;
-  width: 60%;
-  padding: 0 20px;
-  overflow: hidden;
-}
-.right {
-  background-color: lightblue;
-  float: left;
-  width: 20%;
-  padding: 10px 15px;
-  margin-top: 7px;
-}
-
-@media only screen and (max-width:800px) {
-  /* For tablets: */
-  .main {
-    width: 80%;
-    padding: 0;
-  }
-  .right {
-    width: 100%;
-  }
-}
-@media only screen and (max-width:500px) {
-  /* For mobile phones: */
-  .menu, .main, .right {
-    width: 100%;
-  }
-}
-
-</style>
-
-
-</head>
-<div id="box">
-<ul>
-
-<li><a href="#home"><i class="fa fa-home"></i>  Home</a></li>
-<li><a href="#about"><i class="fa fa-book">  O mnie</i></a></li>
-<li><a href="#portfolio"><i class="fa fa-cog">  Portfolio</i></a></li>
-<li><a href="#game"><i class="fa fa-folder">  Gra</i></a></li>
-<li><a href="#contact"><i class="fa fa-envelope">  Kontakt</i></a></li>
-</ul>
-<div id="home">
-<section class="content">
-<h1>
-Patryk Czarnocki</h1>
-</section>
-</div>
-<div id="about">
-<section class="content">
-<h1>
-O mnie</h1>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto culpa cupiditate deleniti dicta dolorum ducimus ea enim et fugiat illo impedit in inventore laboriosam minima natus nemo non pariatur perferendis praesentium quas quos ratione, repellat rerum sequi tempore totam vitae voluptate. Dolore et minima numquam perferendis praesentium quaerat rem voluptatem?</p>
-</section>
-</div>
-<div id="portfolio">
-<section class="content">
-<h1>
-Portfolio</h1>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto culpa cupiditate deleniti dicta dolorum ducimus ea enim et fugiat illo impedit in inventore laboriosam minima natus nemo non pariatur perferendis praesentium quas quos ratione, repellat rerum sequi tempore totam vitae voluptate. Dolore et minima numquam perferendis praesentium quaerat rem voluptatem?</p>
-</section>
-</div>
-<div id="game">
-<section class="content">
-<h1>
-Kółko i krzyżyk</h1>
-
-
-<div class="inline">
-			<div id="players">
-				<h3>Z kim chcesz zagrać?</h3>
-				<button id="one_player" class="button">Z komputerem</button>
-				<button id="two_players" class="button">Z inną osobą</button>
-				<div id="play_with"></div>
-			</div>
-			
-			<div id="choose">
-				<h3>Wybierz X lub O:</h3>
-				<button id="X" class="button">X</button>
-				<button id="zero" class="button">O</button>
-				<div id="you_choose"></div>
-			</div>
-			
-			<div id="resert_div">
-				<button id="reset" class="button">Zagraj jeszcze raz!</button>
-			</div>
-		</div>
-		<div class="inline">
-			<table>
-				<!--<th> Kółko - krzyżyk </th>-->
-				<tr><td id="jeden"></td><td id="dwa"></td><td id="trzy"></td></tr>
-				<tr><td id="cztery"></td><td id="piec"></td><td id="szesc"></td></tr>
-				<tr><td id="siedem"></td><td id="osiem"></td><td id="dziewiec"></td></tr>
-			</table>
-			
-			<div id="statement"><h3>Wynik gry:</h3></div>
-		</div>
+	
+	
+    <body id="page-top">
+        <nav class="navbar navbar-expand-lg bg-secondary fixed-top" id="mainNav">
+            <div class="container"><img src="img/logo.png"/>
+                <button class="navbar-toggler navbar-toggler-right font-weight-bold bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">Menu <i class="fas fa-bars"></i></button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">PORTFOLIO</a>
+                        </li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">O MNIE</a>
+                        </li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">KONTAKT</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
 		
-</section>
-</div>
-<div id="contact">
-<section class="content">
-<h1>
-Kontakt</h1>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto culpa cupiditate deleniti dicta dolorum ducimus ea enim et fugiat illo impedit in inventore laboriosam minima natus nemo non pariatur perferendis praesentium quas quos ratione, repellat rerum sequi tempore totam vitae voluptate. Dolore et minima numquam perferendis praesentium quaerat rem voluptatem?</p>
-</section>
-</div>
-</div>
+        <header class="masthead bg-primary text-white text-center">
+            <div class="container d-flex align-items-center flex-column">
+                <h1 class="masthead-heading mb-0">PATRYK CZARNOCKI</h1>
+				<p> </p>
+                <p class="pre-wrap masthead-subheading font-weight-light mb-0">Graphic Designer</p>
+            </div>
+        </header>
+		
+        <section class="page-section portfolio" id="portfolio">
+            <div class="container">
+
+                <div class="text-center">
+                    <h2 class="page-section-heading text-secondary mb-0 d-inline-block">PORTFOLIO</h2>
+                </div>
+
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                </div>
+
+                <div class="row justify-content-center">
+
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal0">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div><img class="img-fluid" src="img/portfolio/baner.webp" alt="baner"/>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div><img class="img-fluid" src="img/portfolio/druk.webp" alt="druk"/>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div><img class="img-fluid" src="img/portfolio/social.webp" alt="social"/>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal3">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div><img class="img-fluid" src="img/portfolio/opak.webp" alt="opak"/>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal4">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div><img class="img-fluid" src="img/portfolio/tekstyl.webp" alt="tekstyl"/>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal5">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div><img class="img-fluid" src="img/portfolio/www.webp" alt="www"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="portfolio-modal modal fade" id="portfolioModal0" tabindex="-1" role="dialog" aria-labelledby="#portfolioModal0Label" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fas fa-times"></i></span></button>
+                    <div class="modal-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+
+                                    <h2 class="portfolio-modal-title text-secondary mb-0">Banery</h2>
+
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+
+                                    </div>
+                                    <img class="img-fluid rounded mb-5" src="img/portfolio/baner.webp" alt="baner"/>
+                                    
+                                    <p class="mb-5">Zaprojektuję wszelkiego rodzaju banery, billboard'y i inne grafiki wielkowymiarowe.</p>
+                                    <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Zamknij okno</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-labelledby="#portfolioModal1Label" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fas fa-times"></i></span></button>
+                    <div class="modal-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                               
+                                    <h2 class="portfolio-modal-title text-secondary mb-0">Druk</h2>
+                                  
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+
+                                    </div>
+                                    <img class="img-fluid rounded mb-5" src="img/portfolio/druk.webp" alt="druk"/>
+                                   
+                                    <p class="mb-5">Posiadam duże doświadczenie w projektowaniu ulotek, wizytówek, szablonów i innych materiałów do druku.</p>
+                                    <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Zamknij okno</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-labelledby="#portfolioModal2Label" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fas fa-times"></i></span></button>
+                    <div class="modal-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    
+                                    <h2 class="portfolio-modal-title text-secondary mb-0">Social media</h2>
+                                    
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+
+                                    </div>
+                                    <img class="img-fluid rounded mb-5" src="img/portfolio/social.webp" alt="social"/>
+                                    
+                                    <p class="mb-5">Zaprojektuję wszelkiego rodzaju grafiki pod social media - facebook, instagram i inne.</p>
+                                    <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Zamknij okno</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-labelledby="#portfolioModal3Label" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fas fa-times"></i></span></button>
+                    <div class="modal-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    
+                                    <h2 class="portfolio-modal-title text-secondary mb-0">Opakowania</h2>
+                                    
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+
+                                    </div>
+                                    <img class="img-fluid rounded mb-5" src="img/portfolio/opak.webp" alt="opak"/>
+                                    
+                                    <p class="mb-5">Stworzę projekt opakowania Twojego produktu.</p>
+                                    <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Zamknij okno</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-labelledby="#portfolioModal4Label" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fas fa-times"></i></span></button>
+                    <div class="modal-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    
+                                    <h2 class="portfolio-modal-title text-secondary mb-0">Tekstylia</h2>
+                                    
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+
+                                    </div>
+                                    <img class="img-fluid rounded mb-5" src="img/portfolio/tekstyl.webp" alt="tekstyl"/>
+                                    
+                                    <p class="mb-5">Stworzę projekt na koszulkę, torbę i inne tekstylia.</p>
+                                    <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Zamknij okno</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-labelledby="#portfolioModal5Label" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fas fa-times"></i></span></button>
+                    <div class="modal-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    
+                                    <h2 class="portfolio-modal-title text-secondary mb-0">Serwisy internetowe</h2>
+                                    
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+
+                                    </div>
+                                    <img class="img-fluid rounded mb-5" src="img/portfolio/www.webp" alt="www"/>
+                                    
+                                    <p class="mb-5">Zaprojektuję szatę graficzną Twojej strony internetowej.</p>
+                                    <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Zamknij okno</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="page-section bg-primary text-white mb-0" id="about">
+            <div class="container">
+                
+                <div class="text-center">
+                    <h2 class="page-section-heading d-inline-block text-white">O MNIE</h2>
+                </div>
+                
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+
+                </div>
+                
+                <div class="row">
+                    <div class="col-lg-4 ml-auto">
+                        <p class="mb-5">Nazywam się Patryk Czarnocki, specjalizuje się w grafice komputerowej. Posiadam wieloletnie doświadczenie w projektowaniu grafiki użytkowej oraz artystycznej.</p>
+                    </div>
+                    <div class="col-lg-4 mr-auto">
+                        <p class="mb-5">Projektowałem między innymi dla branży gastronomicznej, hotelarskiej i kosmetycznej. We współpracy stawiam na profesjonalizm, terminowość i pozytywny kontakt z klientem. </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="page-section" id="contact">
+            <div class="container">
+                
+                <div class="text-center">
+                    <h2 class="page-section-heading text-secondary d-inline-block mb-0">KONTAKT</h2>
+                </div>
+                
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                </div>
+                
+                <div class="row justify-content-center">
+                    <div class="col-lg-4">
+                        <div class="d-flex flex-column align-items-center">
+                            <div class="icon-contact mb-3"><i class="fas fa-mobile-alt"></i></div>
+                            <div class="text-muted">Telefon</div>
+                            <div class="lead font-weight-bold">+48 511689572</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="d-flex flex-column align-items-center">
+                            <div class="icon-contact mb-3"><i class="far fa-envelope"></i></div>
+                            <div class="text-muted">Email</div><a class="lead font-weight-bold" href="mailto:czarnocki.pp@gmail.com">czarnocki.pp@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer text-center">
+            <div class="container">
+                <div class="row">
+                    
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <h4 class="mb-4"></h4>
+                        <p class="pre-wrap lead mb-0"></p>
+                    </div>
+                    
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <h4 class="mb-4"></h4><a class="btn btn-outline-light btn-social mx-1" href="https://www.facebook.com/"><i class="fab fa-fw fa-facebook-f"></i></a><a class="btn btn-outline-light btn-social mx-1" href="https://www.twitter.com"><i class="fab fa-fw fa-twitter"></i></a><a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/"><i class="fab fa-fw fa-linkedin-in"></i></a>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+       
+        <section class="copyright py-4 text-center text-white">
+            <div class="container"><small class="pre-wrap">Copyright © 2020 Patryk Czarnocki</small></div>
+        </section>
+        
+        <div class="scroll-to-top d-lg-none position-fixed"><a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top"><i class="fa fa-chevron-up"></i></a></div>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+        
+        <script src="assets/mail/jqBootstrapValidation.js"></script>
+        <script src="assets/mail/contact_me.js"></script>
+        
+        <script src="js/scripts.js"></script>
+    </body>
 </html>
